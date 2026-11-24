@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7f2f48">
+  <meta name="description" content="Пелюстка — квіткова майстерня. Авторські букети, свіжі квіти та дбайлива доставка по Києву.">
+  <title>Пелюстка — квіти з любов’ю</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="notice-bar"><span>✿</span> Свіжі квіти щодня <i>·</i> Доставка по Києву від 90 ₴ <a href="#delivery">Дізнатися більше ↗</a></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Пелюстка — на головну"><span class="brand-flower">✿</span><span><strong>пелюстка</strong><small>квіткова майстерня</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню" aria-expanded="false" type="button"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav" aria-label="Головна навігація"><a href="#catalog">Букети</a><a href="#about">Про нас</a><a href="#delivery">Доставка</a><a href="#journal">Журнал</a><a href="#contacts">Контакти</a></nav>
+    <div class="header-actions"><a class="phone-link" href="tel:+380671234567">+38 067 123 45 67</a><button class="cart-button" id="openCart" type="button" aria-label="Відкрити кошик"><span aria-hidden="true">♧</span> <b>Кошик</b> <i id="cartCount">0</i></button></div>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> КВІТИ ДЛЯ ТВОЇХ ІСТОРІЙ</div>
+        <h1>Коли хочеться<br><em>сказати квітами</em></h1>
+        <p>Збираємо букети з настроєм — від маленького «дякую» до великого «кохаю». Свіжі квіти, ніжне пакування й доставка вчасно.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#catalog">Обрати букет <span>↗</span></a><button class="button button-quiet" type="button" data-open-chat>Порадьте мені <span>✿</span></button></div>
+        <div class="hero-proof"><div class="avatar-stack"><i>О</i><i>М</i><i>І</i></div><span><strong>Теплі слова — у кожному букеті</strong><small>Понад 1 200 доставлених усмішок</small></span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo-wrap"><img src="https://images.unsplash.com/photo-1655744348513-7e48315b7769?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Ніжний букет рожевих і білих троянд" fetchpriority="high"><span class="photo-caption">● Зібрано сьогодні у майстерні</span></div>
+        <div class="hero-sticker"><span>✿</span><small>АВТОРСЬКІ БУКЕТИ · З ЛЮБОВ’Ю ·</small></div>
+        <div class="hero-price"><small>БУКЕТ ТИЖНЯ</small><strong>«Рожевий світанок»</strong><b>від 1 890 ₴ <span>↗</span></b></div>
+      </div>
+      <div class="hero-side-note">ДОБРІ ЕМОЦІЇ ПОЧИНАЮТЬСЯ З КВІТІВ</div>
+    </section>
+
+    <section class="benefits shell" aria-label="Наші переваги">
+      <div><span>✿</span><p><strong>Свіжі квіти</strong><small>оновлюємо щодня</small></p></div>
+      <div><span>♡</span><p><strong>З турботою</strong><small>кожен букет вручну</small></p></div>
+      <div><span>⌁</span><p><strong>Доставка вчасно</strong><small>по Києву від 2 годин</small></p></div>
+      <div><span>✉</span><p><strong>Листівка у подарунок</strong><small>додамо твої слова</small></p></div>
+    </section>
+
+    <section class="categories shell">
+      <div class="section-head"><div><div class="eyebrow">ЗНАЙДИ СВІЙ НАСТРІЙ</div><h2>Букет для <em>кожного моменту</em></h2></div><a class="text-link" href="#catalog">Усі букети ↗</a></div>
+      <div class="category-grid">
+        <a class="category-card category-one" href="#catalog" data-category-link="троянди"><img src="https://images.unsplash.com/photo-1646565804980-7609ba53d260?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy"><span class="category-no">01</span><span class="category-copy"><strong>Сказати «кохаю»</strong><small>Троянди та ніжність <b>↗</b></small></span></a>
+        <a class="category-card category-two" href="#catalog" data-category-link="тюльпани"><img src="https://images.unsplash.com/photo-1646565795834-6bfc55dd4fbe?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy"><span class="category-no">02</span><span class="category-copy"><strong>Привітати зі святом</strong><small>Яскраві композиції <b>↗</b></small></span></a>
+        <a class="category-card category-three" href="#catalog" data-category-link="комплімент"><img src="https://images.unsplash.com/photo-1719736321482-1d70cceba67e?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy"><span class="category-no">03</span><span class="category-copy"><strong>Просто так</strong><small>Маленькі радощі <b>↗</b></small></span></a>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+      <div class="shell">
+        <div class="section-head catalog-head"><div><div class="eyebrow">СТВОРЕНО З ТЕПЛОМ</div><h2>Наші <em>букети</em></h2></div><p>Знайди той самий. А якщо вагаєшся — наш помічник допоможе обрати.</p></div>
+        <div class="catalog-tools">
+          <div class="filter-tabs" role="group" aria-label="Фільтр букетів"><button class="filter-tab active" data-filter="усі" aria-pressed="true">Усі букети</button><button class="filter-tab" data-filter="троянди" aria-pressed="false">Троянди</button><button class="filter-tab" data-filter="тюльпани" aria-pressed="false">Тюльпани</button><button class="filter-tab" data-filter="комплімент" aria-pressed="false">Компліменти</button></div>
+          <label class="search-box"><span>⌕</span><input id="productSearch" type="search" placeholder="Знайти букет" aria-label="Пошук букетів"></label>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="catalog-foot"><span>✿ Квіти можуть трохи відрізнятися залежно від сезону</span><a class="text-link" href="#faq">Як ми збираємо букети? ↗</a></div>
+      </div>
+    </section>
+
+    <section class="story shell" id="about">
+      <div class="story-photo"><img src="https://images.unsplash.com/photo-1615196519167-bb42d6337e7a?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Яскраві квіти у майстерні" loading="lazy"><span>✿ З 2018 РОКУ</span></div>
+      <div class="story-copy"><div class="eyebrow">НАША МАЙСТЕРНЯ</div><h2>Не просто квіти.<br><em>Трохи більше</em> любові.</h2><p>«Пелюстка» почалася з маленької майстерні й великої любові до квітів. Ми віримо, що букет може сказати важливе, коли бракує слів.</p><p>Тому уважно відбираємо квіти, поєднуємо відтінки й завжди додаємо до замовлення трішки турботи.</p><a class="button button-outline" href="#contacts">Познайомитися ближче ↗</a><div class="signature">З теплом, команда «Пелюстки» <b>♡</b></div></div>
+    </section>
+
+    <section class="service-band" id="delivery"><div class="shell service-inner"><div class="service-title"><div class="eyebrow">МАЛЕНЬКІ ДЕТАЛІ — ВАЖЛИВІ</div><h2>Турбота <em>у кожному кроці</em></h2></div><div class="service-item"><span>01</span><div><strong>Ніжно запакуємо</strong><p>Пакування підкреслює красу квітів і не відволікає від них.</p></div></div><div class="service-item"><span>02</span><div><strong>Додамо твої слова</strong><p>Напиши кілька рядків — ми додамо їх на листівку.</p></div></div><div class="service-item"><span>03</span><div><strong>Доставимо з усмішкою</strong><p>Узгодимо зручний час і передамо букет адресату.</p></div></div></div></section>
+
+    <section class="reviews shell"><div class="section-head"><div><div class="eyebrow">ВАШІ ТЕПЛІ СЛОВА</div><h2>Відгуки, що <em>зігрівають</em></h2></div><span class="review-arrows">←　→</span></div><div class="review-grid">
+      <article><div class="stars">★★★★★</div><blockquote>«Букет був настільки красивий, що іменинниця спершу просто мовчки обіймала його. Дякую за цю магію!»</blockquote><div class="review-author"><i>М</i><span><strong>Марія К.</strong><small>замовляла «Рожевий світанок»</small></span><b>♡</b></div></article>
+      <article><div class="stars">★★★★★</div><blockquote>«Попросила букет “на ваш смак” — і це було найкраще рішення. Доставка чітко до початку свята!»</blockquote><div class="review-author"><i>А</i><span><strong>Анастасія Р.</strong><small>замовляла сезонний мікс</small></span><b>♡</b></div></article>
+      <article><div class="stars">★★★★★</div><blockquote>«Дуже уважна команда. Допомогли підібрати квіти мамі й додали листівку з моїм текстом.»</blockquote><div class="review-author"><i>І</i><span><strong>Ігор Л.</strong><small>замовляв «Обійми»</small></span><b>♡</b></div></article>
+    </div></section>
+
+    <section class="journal" id="journal"><div class="shell"><div class="section-head"><div><div class="eyebrow">ТРОХИ КВІТКОВОЇ МУДРОСТІ</div><h2>Квітковий <em>щоденник</em></h2></div><a class="text-link" href="#journal">Усі нотатки ↗</a></div><div class="journal-grid">
+      <article><a class="journal-photo" href="#faq"><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Квіти у весняному світлі" loading="lazy"><span>ДОГЛЯД</span></a><small>5 хв читання　·　12 червня</small><h3>Як продовжити життя букету: 5 простих порад</h3><a href="#faq">Читати ↗</a></article>
+      <article><a class="journal-photo" href="#catalog"><img src="https://images.unsplash.com/photo-1646565804980-7609ba53d260?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Букет тюльпанів" loading="lazy"><span>НАТХНЕННЯ</span></a><small>4 хв читання　·　03 червня</small><h3>Мова квітів: що розкажуть відтінки троянд</h3><a href="#catalog">Читати ↗</a></article>
+      <article><a class="journal-photo" href="#delivery"><img src="https://images.unsplash.com/photo-1719736321482-1d70cceba67e?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Ніжні білі троянди" loading="lazy"><span>ІДЕЇ ДЛЯ ПОДАРУНКІВ</span></a><small>3 хв читання　·　28 травня</small><h3>Букет без приводу — найкращий привід</h3><a href="#delivery">Читати ↗</a></article>
+    </div></div></section>
+
+    <section class="faq shell" id="faq"><div class="faq-intro"><div class="eyebrow">МИ ПОРУЧ</div><h2>Є запитання?<br><em>Ми підкажемо.</em></h2><p>Або напиши нашому квітковому помічнику — він завжди онлайн.</p><button class="button button-primary" type="button" data-open-chat>Запитати помічника ↗</button></div><div class="faq-list">
+      <details open><summary>Як швидко ви доставляєте букет?<b>＋</b></summary><p>Зазвичай доставка по Києву займає від 2 годин після підтвердження замовлення. Час узгодимо з тобою окремо.</p></details>
+      <details><summary>Чи можна додати листівку?<b>＋</b></summary><p>Так, маленька листівка вже входить у вартість. Напиши текст у примітці до замовлення — ми красиво його оформимо.</p></details>
+      <details><summary>Чи будуть квіти такими, як на фото?<b>＋</b></summary><p>Ми дбайливо відтворюємо стиль і палітру букета. Через сезонність окремі квіти можуть замінюватися на схожі за відтінком.</p></details>
+      <details><summary>Як оплатити замовлення?<b>＋</b></summary><p>Можна оплатити карткою онлайн або переказом після підтвердження замовлення менеджером.</p></details>
+    </div></section>
+
+    <section class="contact" id="contacts"><div class="shell contact-inner"><div><div class="eyebrow">ЗАВІТАЙ АБО НАПИШИ</div><h2>Давай створимо<br><em>щось прекрасне.</em></h2><p>Маєш особливу ідею або хочеш порадитися з флористом? Ми на зв’язку.</p><div class="contact-details"><a href="tel:+380671234567"><small>ТЕЛЕФОН</small><strong>+38 067 123 45 67</strong></a><div><small>МАЙСТЕРНЯ</small><strong>Київ, вул. Квіткова, 18</strong></div><div><small>ГОДИНИ РОБОТИ</small><strong>Щодня, 9:00–20:00</strong></div></div><small class="demo-note">Навчальний макет: контактні дані наведені для прикладу.</small></div>
+      <form class="contact-form" id="contactForm"><div class="form-heading"><span>✿</span><strong>Залиш нам записку</strong><small>Ми передзвонимо та допоможемо з вибором</small></div><label>Як до тебе звертатися?<input name="name" type="text" placeholder="Твоє ім’я" required></label><label>Номер телефону<input name="phone" type="tel" placeholder="+38 0__ ___ __ __" required></label><label>Що шукаєш?<textarea name="message" rows="3" placeholder="Розкажи про нагоду або побажання"></textarea></label><button class="button button-primary" type="submit">Надіслати записку ↗</button><small class="form-note">Демонстраційна форма — дані не надсилаються на сервер.</small></form>
+    </div></section>
+  </main>
+
+  <footer class="footer"><div class="shell footer-main"><div><a class="brand brand-light" href="#top"><span class="brand-flower">✿</span><span><strong>пелюстка</strong><small>квіткова майстерня</small></span></a><p>Квіти для твоїх історій.<br>З любов’ю, у Києві.</p></div><div><b>МАГАЗИН</b><a href="#catalog">Усі букети</a><a href="#catalog">Авторські композиції</a><a href="#catalog">Квіти у коробці</a><a href="#catalog">Компліменти</a></div><div><b>КОРИСНЕ</b><a href="#delivery">Доставка й оплата</a><a href="#faq">Поширені запитання</a><a href="#journal">Квітковий щоденник</a><a href="#about">Про майстерню</a></div><div><b>МИ НА ЗВ’ЯЗКУ</b><a href="tel:+380671234567">+38 067 123 45 67</a><a href="mailto:vitannia@pelyustka.example">vitannia@pelyustka.example</a><span class="social-links"><a href="#contacts">ig</a><a href="#contacts">tg</a><a href="#contacts">f</a></span></div></div><div class="shell footer-bottom"><span>© 2026 «Пелюстка». Навчальний проєкт.</span><span>Зроблено з ♡ в Україні</span><a href="#top">Нагору ↑</a></div></footer>
+
+  <div class="dimmer" id="cartDimmer" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Кошик" aria-hidden="true"><div class="drawer-head"><div><small>ТВОЇ ОБРАНІ КВІТИ</small><h2>Кошик <span id="drawerCount"></span></h2></div><button class="round-close" id="closeCart" type="button" aria-label="Закрити кошик">×</button></div><div id="cartItems" class="cart-items"></div><div id="cartEmpty" class="cart-empty"><span>✿</span><strong>Тут поки що порожньо</strong><p>Обери букет — ми подбаємо про решту.</p><a class="button button-outline" href="#catalog" id="continueShopping">До букетів</a></div><div class="cart-summary" id="cartSummary" hidden><div><span>Разом</span><strong id="cartTotal">0 ₴</strong></div><button class="button button-primary" id="checkoutButton" type="button">Оформити замовлення ↗</button><small>Навчальний макет: оплата не проводиться.</small></div></aside>
+
+  <div class="chat-widget"><section class="chat-panel" id="chatPanel" aria-label="Чат із квітковим помічником" aria-hidden="true"><div class="chat-head"><span>✿</span><div><strong>Пелюстка поруч</strong><small>● квітковий помічник онлайн</small></div><button class="round-close" id="closeChat" aria-label="Закрити чат" type="button">×</button></div><div class="chat-messages" id="chatMessages" aria-live="polite"><div class="chat-message bot-message"><i>✿</i><p>Привіт! Допоможу підібрати букет і підкажу про доставку. Що шукаєш?</p></div></div><div class="chat-suggestions" id="chatSuggestions"><button type="button">Порадь букет</button><button type="button">Доставка й оплата</button><button type="button">Як доглядати?</button></div><form class="chat-form" id="chatForm"><label class="visually-hidden" for="chatInput">Твоє повідомлення</label><input id="chatInput" autocomplete="off" placeholder="Напиши своє запитання…"><button type="submit" aria-label="Надіслати">➤</button></form><div class="chat-note">Помічник відповідає на типові запитання</div></section><button class="chat-fab" id="chatFab" type="button" aria-label="Відкрити квіткового помічника"><span>✿</span><b>Потрібна порада?</b></button></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
